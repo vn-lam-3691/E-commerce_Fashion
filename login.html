@@ -122,7 +122,7 @@
             <nav class="header__menu mobile-menu">
               <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li class="active"><a href="./shop.html">Shop</a></li>
+                <li><a href="./shop.html">Shop</a></li>
                 <li>
                   <a href="#">Pages</a>
                   <ul class="dropdown">
@@ -156,158 +156,123 @@
     </header>
     <!-- Header Section End -->
 
-    <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-option">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="breadcrumb__text">
-              <h4>Shopping Cart</h4>
-              <div class="breadcrumb__links">
-                <a href="./index.html">Home</a>
-                <a href="./shop.html">Shop</a>
-                <span>Shopping Cart</span>
+    <div class="login-form-wrapper container-wrapper">
+      <form class="form-signin rounded-sm shadow">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills mb-4">
+          <li class="nav-item pill-1">
+            <a class="nav-link active rounded-0" data-toggle="tab" href="#login"
+              >Đăng nhập</a
+            >
+          </li>
+          <li class="nav-item pill-2">
+            <a class="nav-link rounded-0" data-toggle="tab" href="#register"
+              >Đăng ký</a
+            >
+          </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!-- Tab1 -->
+          <div id="login" class="container tab-pane active">
+            <label for="loginEmail" class="sr-only">Email address</label>
+            <input
+              name="email_lg"
+              type="email"
+              id="loginEmail"
+              class="form-control mb-4"
+              placeholder="Email"
+              required
+              autofocus
+            />
+            <label for="loginPassword" class="sr-only">Password</label>
+            <input
+              name="pass_lg"
+              type="password"
+              id="loginPassword"
+              class="form-control mb-4"
+              placeholder="Mật khẩu"
+              required
+            />
+            <div class="one-line mb-2">
+              <div class="checkbox">
+                <label>
+                  <input
+                    name="remember"
+                    type="checkbox"
+                    checked="checked"
+                    value="remember-me"
+                  />
+                  Lưu mật khẩu
+                </label>
               </div>
+              <a class="forgot" href="#!">Quên mật khẩu?</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Breadcrumb Section End -->
 
-    <!-- Shopping Cart Section Begin -->
-    <section class="shopping-cart spad">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="shopping__cart__table">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="product__cart__item">
-                      <div class="product__cart__item__pic">
-                        <img src="img/shopping-cart/cart-1.jpg" alt="" />
-                      </div>
-                      <div class="product__cart__item__text">
-                        <h6>T-shirt Contrast Pocket</h6>
-                        <h5>$98.49</h5>
-                      </div>
-                    </td>
-                    <td class="quantity__item">
-                      <div class="quantity">
-                        <div class="pro-qty-2">
-                          <input type="text" value="1" />
-                        </div>
-                      </div>
-                    </td>
-                    <td class="cart__price">$ 30.00</td>
-                    <td class="cart__close"><i class="fa fa-close"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="product__cart__item">
-                      <div class="product__cart__item__pic">
-                        <img src="img/shopping-cart/cart-2.jpg" alt="" />
-                      </div>
-                      <div class="product__cart__item__text">
-                        <h6>Diagonal Textured Cap</h6>
-                        <h5>$98.49</h5>
-                      </div>
-                    </td>
-                    <td class="quantity__item">
-                      <div class="quantity">
-                        <div class="pro-qty-2">
-                          <input type="text" value="1" />
-                        </div>
-                      </div>
-                    </td>
-                    <td class="cart__price">$ 32.50</td>
-                    <td class="cart__close"><i class="fa fa-close"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="product__cart__item">
-                      <div class="product__cart__item__pic">
-                        <img src="img/shopping-cart/cart-3.jpg" alt="" />
-                      </div>
-                      <div class="product__cart__item__text">
-                        <h6>Basic Flowing Scarf</h6>
-                        <h5>$98.49</h5>
-                      </div>
-                    </td>
-                    <td class="quantity__item">
-                      <div class="quantity">
-                        <div class="pro-qty-2">
-                          <input type="text" value="1" />
-                        </div>
-                      </div>
-                    </td>
-                    <td class="cart__price">$ 47.00</td>
-                    <td class="cart__close"><i class="fa fa-close"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="product__cart__item">
-                      <div class="product__cart__item__pic">
-                        <img src="img/shopping-cart/cart-4.jpg" alt="" />
-                      </div>
-                      <div class="product__cart__item__text">
-                        <h6>Basic Flowing Scarf</h6>
-                        <h5>$98.49</h5>
-                      </div>
-                    </td>
-                    <td class="quantity__item">
-                      <div class="quantity">
-                        <div class="pro-qty-2">
-                          <input type="text" value="1" />
-                        </div>
-                      </div>
-                    </td>
-                    <td class="cart__price">$ 30.00</td>
-                    <td class="cart__close"><i class="fa fa-close"></i></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="continue__btn">
-                  <a href="#">Continue Shopping</a>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="continue__btn update__btn">
-                  <a href="#"><i class="fa fa-spinner"></i> Update cart</a>
-                </div>
-              </div>
-            </div>
+            <button
+              class="btn btn-lg btn-login btn-block"
+              onclick="loginUser()"
+            >
+              Đăng nhập
+            </button>
+            <p class="mt-4 mb-0 text-muted small">
+              Hãy đăng nhập ngay để khám phá thế giới thời trang tại cửa hàng
+              Skyline Shop.
+            </p>
           </div>
-          <div class="col-lg-4">
-            <div class="cart__discount">
-              <h6>Discount codes</h6>
-              <form action="#">
-                <input type="text" placeholder="Coupon code" />
-                <button type="submit">Apply</button>
-              </form>
-            </div>
-            <div class="cart__total">
-              <h6>Cart total</h6>
-              <ul>
-                <li>Subtotal <span>$ 169.50</span></li>
-                <li>Total <span>$ 169.50</span></li>
-              </ul>
-              <a href="#" class="primary-btn">Proceed to checkout</a>
-            </div>
+
+          <!-- Tab2 -->
+          <div id="register" class="container tab-pane fade">
+            <label for="Name" class="sr-only">Name</label>
+            <input
+              name="name"
+              type="text"
+              id="Name"
+              class="form-control mb-4"
+              placeholder="Tên tài khoản"
+              required
+            />
+            <label for="registerEmail" class="sr-only">Email address</label>
+            <input
+              name="email_rg"
+              type="email"
+              id="registerEmail"
+              class="form-control mb-4"
+              placeholder="Địa chỉ email"
+              required
+              autofocus
+            />
+            <label for="Mobile" class="sr-only">Mobile</label>
+            <input
+              name="mobile"
+              type="tel"
+              id="Mobile"
+              class="form-control mb-4"
+              placeholder="Số điện thoại"
+              required
+            />
+            <label for="registerPassword" class="sr-only">Password</label>
+            <input
+              name="pass_rg"
+              type="password"
+              id="registerPassword"
+              class="form-control mb-4"
+              placeholder="Mật khẩu"
+              required
+            />
+            <button
+              class="btn btn-lg btn-login btn-block"
+              onclick="registerUser()"
+            >
+              Đăng ký
+            </button>
+            <p class="mt-4 mb-0 text-muted small">
+              Đăng ký ngay để nhận được những ưu đãi hấp dẫn từ chúng tôi
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Shopping Cart Section End -->
+      </form>
+    </div>
 
     <!-- Footer Section Begin -->
     <footer class="footer">

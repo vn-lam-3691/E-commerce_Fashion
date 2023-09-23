@@ -15,6 +15,7 @@
 8.  Latest Section
 9.  Contact
 10.  Footer Style
+11. login form
 -------------------------------------------------------------------*/
 
 html,
@@ -392,6 +393,8 @@ ol {
 
 .header__logo {
   padding: 30px 0;
+  width: 192px;
+  height: 23px;
 }
 
 .header__logo a {
@@ -1930,7 +1933,7 @@ ol {
 -----------------------*/
 
 .footer {
-  background: #111111;
+  background: #020202;
   padding-top: 70px;
 }
 
@@ -3882,4 +3885,113 @@ ol {
   .categories__text:before {
     height: 250px;
   }
+}
+
+/* Login form */
+.login-form-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.form-signin {
+  background: white;
+  padding: 50px 50px 0px 50px;
+  min-height: 470px;
+}
+
+.one-line {
+  display: flex;
+}
+
+.forgot {
+  margin-left: auto;
+  color: #279eff;
+}
+.forgot:hover {
+  color: #1f81d2;
+}
+#accountDropdown {
+  display: none;
+}
+#accountDropdown .dropdown-menu {
+  min-width: 7rem;
+  right: -54%;
+}
+
+@media only screen and (max-width: 576px) {
+  .form-signin {
+    min-width: 320px;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+  }
+}
+
+/* not active */
+.nav-pills .pill-1 .nav-link:not(.active) {
+  border: none;
+  color: #6c757d !important;
+  font-weight: 700;
+  transition: width 0.4s;
+}
+
+.nav-pills .pill-2 .nav-link:not(.active) {
+  border: none;
+  color: #6c757d !important;
+  font-weight: 700;
+  transition: width 0.4s;
+}
+
+/* active (faded) */
+.nav-pills .pill-1 .nav-link {
+  background: white !important;
+  border-bottom: 2px solid #e53637;
+  color: #212529 !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-pills .pill-2 .nav-link {
+  background: white !important;
+  border-bottom: 2px solid #e53637;
+  color: #212529 !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-pills .pill-1 .nav-link:hover {
+  color: #212529 !important;
+  width: 100%;
+  border-bottom: 2px solid #e53637;
+}
+.nav-pills .pill-2 .nav-link:hover {
+  color: #212529 !important;
+  width: 100%;
+  border-bottom: 2px solid #e53637;
+}
+
+.nav {
+  padding: 0 15px !important;
+}
+.btn-login {
+  background-color: #e53637;
+  color: #fff;
+}
+.btn-login:hover {
+  background-color: #e53637;
+  color: #fff;
+}
+.profile {
+  background: white;
+  padding: 50px 50px 0px 50px;
+  min-height: 270px;
+}
+.profile .label-proflie {
+  color: #000;
+}
+#butDoiMatKhau {
+  color: #86b817;
+}
+#butDoiMatKhau:hover {
+  cursor: pointer;
 }
