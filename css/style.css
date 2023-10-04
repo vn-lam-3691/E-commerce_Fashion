@@ -2357,6 +2357,7 @@ ol {
   color: #0d0d0d;
   font-weight: 700;
 }
+.shopping__cart__table table tbody tr .cart__close
 
 .shopping__cart__table table tbody tr td.quantity__item {
   width: 175px;
@@ -2411,6 +2412,11 @@ ol {
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
+}
+.shopping__cart__table table tbody tr td.cart__close i:hover{
+  background-color: red;
+  cursor: pointer;
+  color: white;
 }
 
 .continue__btn.update__btn {
@@ -2496,6 +2502,9 @@ ol {
   top: 0;
   height: 100%;
 }
+.cart__discount form button:hover{
+  background-color: #312154;
+}
 
 .cart__total {
   background: #f3f2ee;
@@ -2532,6 +2541,9 @@ ol {
   text-align: center;
   letter-spacing: 2px;
 }
+.cart__total .primary-btn:hover{
+  background-color: #312154;
+} 
 
 /*---------------------
   Checkout
@@ -3775,6 +3787,13 @@ ol {
   .continue__btn {
     text-align: center;
   }
+  .continue__btn a:hover{
+    background-color: #312154;
+  }
+  .continue__btn.update__btn>a:hover{
+   background-color: #312154;
+  }
+ 
   .continue__btn.update__btn {
     text-align: center;
     margin-top: 20px;
@@ -4103,3 +4122,44 @@ ol {
   font-weight: normal;
   border-radius: 0px;
 }
+
+
+/* shop-details */
+.list-feedback .main-feedback .account img{
+  border-radius: 50%; 
+  width: 80px;
+  height: 80px;
+  
+}
+
+.list-feedback .main-feedback  .account p{
+  font-size: 140%;
+}
+
+
+@media only screen and (max-width: 769px) {
+  .list-feedback .main-feedback .account img{
+    border-radius: 50%; 
+    width: 55px;
+    height: 55px;
+   
+  }
+  .list-feedback .main-feedback .account h3{
+   font-size: 20px;
+  }
+  .list-feedback .main-feedback .account p{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 321px){
+  .list-feedback .main-feedback .account img{
+    border-radius: 50%; 
+    height: 45px;
+}
+
+}
+
+
+
+
